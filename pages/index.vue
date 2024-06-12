@@ -1,3 +1,10 @@
+<script lang="ts">
+const db = hubDatabase();
+const { results } = db.prepare("SELECT * FROM companies LIMIT 2").all();
+
+console.log(results);
+</script>
+
 <template>
   <div>
     <div class="invoice mx-auto" style="width: 781.2px; height: 1105.02px">
