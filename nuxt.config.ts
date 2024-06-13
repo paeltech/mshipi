@@ -7,4 +7,9 @@ export default defineNuxtConfig({
     blob: true,
     database: true,
   },
+  $development: {
+    hub: {
+      remote: true,
+    },
+  },
 });

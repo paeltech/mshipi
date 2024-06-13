@@ -1,5 +1,6 @@
-<script lang="ts">
+<script setup lang="ts">
 const db = hubDatabase();
+
 const { results } = db.prepare("SELECT * FROM companies LIMIT 2").all();
 
 console.log(results);
